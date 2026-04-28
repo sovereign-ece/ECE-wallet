@@ -1,0 +1,87 @@
+{
+  "name": "EfikCoin Eternal",
+  "version": "1.0.0",
+  "description": "Non‑custodial DeFi ecosystem on BSC with wallet, staking, mining games, sports betting, referrals, Telegram Mini App, and admin dashboard.",
+  "repositories": {
+    "ece-wallet": {
+      "url": "https://github.com/sovereign-ece/ece-wallet",
+      "live": "https://sovereign-ece.github.io/ece-wallet",
+      "description": "Full non‑custodial wallet (send/receive ECE/BNB/any token, staking, lending, referral, XP, multi‑network, hidden admin)."
+    },
+    "efikcoin-website": {
+      "url": "https://github.com/sovereign-ece/efikcoin-website",
+      "live": "https://sovereign-ece.github.io/efikcoin-website",
+      "description": "Global marketing site with bot check, whitepaper, registration, sports betting, games, staking, transaction history."
+    },
+    "efikcoin-miniapp": {
+      "url": "https://github.com/sovereign-ece/efikcoin-miniapp",
+      "live": "https://sovereign-ece.github.io/efikcoin-miniapp",
+      "description": "Telegram Mini App with TON Connect, mining (ECE/BTC/USDT), dragon battle, sports betting, withdrawals, referrals."
+    },
+    "efikcoin-admin": {
+      "url": "https://github.com/sovereign-ece/efikcoin-admin",
+      "live": "https://sovereign-ece.github.io/efikcoin-admin",
+      "description": "Admin dashboard (password‑protected) – view user data, manage blacklist/loans/bonuses, import/export."
+    }
+  },
+  "smartContracts": {
+    "eceToken": {
+      "address": "0x9F8C29E496ECB6C39c221458f211234DfCB233E0",
+      "network": "BSC Mainnet",
+      "explorer": "https://bscscan.com/token/0x9F8C29E496ECB6C39c221458f211234DfCB233E0"
+    },
+    "eceBnbLiquidityPool": {
+      "address": "0x7FAbe1cc407f0e01c3cdF5Cc05744f8D98bC70B6",
+      "network": "BSC Mainnet",
+      "explorer": "https://bscscan.com/address/0x7FAbe1cc407f0e01c3cdF5Cc05744f8D98bC70B6"
+    },
+    "adminWallet": {
+      "address": "0xC5AD5cfcF81AD63a94227334b898eafCe6B27cCA"
+    },
+    "projectFeeWallet": {
+      "address": "0x59A8D4f63A7Bcc58bFfEC4e972ba079443c2e358"
+    }
+  },
+  "telegramBot": {
+    "username": "@ECEwalletbot",
+    "miniAppUrl": "https://sovereign-ece.github.io/efikcoin-miniapp",
+    "menuButtonText": "⚽ Play EfikCoin Game",
+    "commands": ["/start", "/price", "/balance", "/play", "/news", "/help"],
+    "tonAddress": "UQBGNt_FxArw4p9KJ-8jIP5NjsMzeYxrcWaYkn80oeKrI92G"
+  },
+  "externalIntegrations": {
+    "web3Modal": {
+      "projectId": "b56e18d99c7dd5bcf5b87b5c7942d9d8",
+      "chains": [56, 1, 137]
+    },
+    "googleTranslate": true,
+    "tradingView": true,
+    "pancakeSwap": {
+      "swapLink": "https://pancakeswap.finance/swap?outputCurrency=0x9F8C29E496ECB6C39c221458f211234DfCB233E0",
+      "addLiquidityLink": "https://pancakeswap.finance/add/BNB/0x9F8C29E496ECB6C39c221458f211234DfCB233E0"
+    }
+  },
+  "features": {
+    "wallet": ["create/import", "send ECE/BNB/any token", "staking", "lending", "referral", "XP/level", "multi‑network", "hidden admin"],
+    "website": ["bot check", "whitepaper", "registration", "sports betting", "mining", "dragon game", "transaction history"],
+    "miniApp": ["TON Connect", "mining", "dragon battle", "sports betting", "withdrawals", "referrals"],
+    "admin": ["password protection", "view user data", "manage blacklist/loans/bonuses", "import/export JSON"]
+  },
+  "deployment": {
+    "githubPages": {
+      "requiredFiles": [".nojekyll", "index.html"],
+      "branch": "main",
+      "folder": "/ (root)"
+    },
+    "customDomain": {
+      "cloudflareIPs": ["185.199.108.153", "185.199.109.153", "185.199.110.153", "185.199.111.153"]
+    }
+  },
+  "socialLinks": {
+    "telegram": "https://t.me/efikcoinofficialecosystem",
+    "discord": "https://discord.gg/Ub4vvudcV",
+    "twitter": "https://twitter.com/efikcoinstakin",
+    "facebook": "https://www.facebook.com/profile.php?id=61573960395647",
+    "email": "efikcoineternal@gmail.com"
+  }
+}
